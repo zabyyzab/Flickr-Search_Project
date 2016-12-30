@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<head>
+
+
+<style> 
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("images/searchicon.png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    margin: 5px 1px 3px 0px;
+    outline: none;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 25%;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  	padding: 12px 20px 12px 40px;
+  	margin: 5px 1px 3px 0px;
+  	border: 2px solid rgba(81, 203, 238, 1);
+}
+
+#pageWrap {
+     width: 800px;
+     margin: 0 auto;
+}
+
+body {
+  text-align: center;
+ }
+
+#pageWrap {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+}
+</style>
+
+<style>
+
+.element {
+background: linear-gradient(270deg, #007c90, #4f52e4, #15b3d7, #5aa169);
+background-size: 800% 800%;
+width: 100%;
+height: 100%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+html,
+body {
+  height: 100%;
+}
+
+
+</style>
+
+<meta charset="utf-8">
+
+
+<title>Zabs Flickr Search Project</title>
+	
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" > </script>
+
+
+<script src = "js/flickrsearch.js" > </script>
+</head>
+
+
+<body>
+
+
+
+<div id= "pageWrap">
+
+<!--all the output will live in this pageWrap div-->
+
+
+	<h1>Zabs Flickr Search Project</h1>
+	 
+<div id = "searchingarea" >
+	 <input id = "searchtag" type = "text" placeholder = "Search..."/>
+	 <button id = "button">search</button>
+</div>		
+	
+<div id = "feed"></div>
+
+</div>
+</body>
+</html>
+
